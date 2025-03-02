@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background:#fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(red, green, blue, alpha);
+    position: relative;
+
+}
+.profile-card::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px;
+    background-color: #4070f4;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: khaki;
+    padding:3px;
+    margin-bottom: 10px;
+
+    
+}
+.image .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+}
+.profile-card .text-date{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: #333;
+
+}
+.text-date .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-date .job{
+font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .media {
+    display: flex;
+    align-items: center;
+}
+.media .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffF;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+ .profile-card .button{
+     display: flex;
+     align-items: center;
+     margin-top: 25px;
+}
+.button .button{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius:24px ;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button .button:hover{
+    background-color: #0e4bf1;
+
+}
+.profile-card .antp{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.antp .data{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data i{
+    font-size: 10x;
+    margin-right: 6px;
+
+}
+.data:last-child{
+    border-right: none;
+}
+</style>
+<body>
+    <div class="profile-card">
+       <div class="image">
+          <img src="https://t3.ftcdn.net/jpg/05/56/29/10/240_F_556291020_q2ieMiOCKYbtoLITrnt7qcSL1LJYyWrU.jpg" alt="" class="img"> 
+        </div>
+        <div class="text-date">
+            <span class="name">Super007_5</span>
+            <span class="job">Cropcard | instagram</span>
+        </div>
+        <div class="media">
+            <a href="#" style="background:#4267b2;" class="link">
+                <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" style="background: #e1330e;" class="link">
+                <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" style="background: #ff0000;" class="link">
+                <i class="ri-youtube-fill"></i>
+            </a>
+            <a href="#" style="background:black;" class="link">
+                <i class="ri-github-fill"></i>
+            </a>
+            <a href="#" style="background:#1da1f2 ;" class="link">
+                <i class="ri-twitter-fill"></i>
+            </a>
+        </div>
+        <div class="button">
+            <div class="button">Subscribe</div>
+            <div class="button">Massage</div>
+        </div>
+        <div class="antp">
+            <div class="data">
+                <i class="ri-heart-line"></i>
+                <span class="number">1k</span>
+            </div>
+            <div class="data">
+                <i class="ri-chat-3-line"></i>
+                <span class="number">2k</span>
+            </div>
+            <div class="data">
+                <i class="ri-send-plane-fill"></i>
+                <span class="number">3k</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
